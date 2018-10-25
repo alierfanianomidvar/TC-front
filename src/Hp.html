@@ -27,7 +27,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
@@ -58,7 +57,6 @@
             font-family: MyFont;
         }
 
-
         * {
             box-sizing: border-box;
         }
@@ -66,9 +64,10 @@
         *:focus {
             outline: none;
         }
+
         body {
             font-family: Arial;
-            background: url("img/alireza-attari-569127-unsplash.jpg");
+            background: url("img/mohamad-rashidi-717605-unsplash.jpg");
 
             /*filter: blur(8px);
             -webkit-filter: blur(8px);*/
@@ -78,10 +77,12 @@
             background-attachment: fixed;
             padding: 50px;
         }
+
         .login {
             margin: 20px auto;
             width: 300px;
         }
+
         .login-screen {
             background-color: #FFF;
             padding: 20px;
@@ -96,6 +97,7 @@
         .login-form {
             text-align: center;
         }
+
         .control-group {
             margin-bottom: 10px;
         }
@@ -157,21 +159,21 @@
             <h1 class="myInfo" style="color: #ac2925">TehranCar</h1>
             <p>Login</p>
         </div>
-        <div class="login-form">
+        <form class="login-form">
             <div class="control-group">
-                <input type="text" class="login-field" value="" placeholder="username" id="login-name" required>
+                <input type="text" class="login-field" value="" placeholder="username" id="login-name" name="username" required>
                 <label class="login-field-icon fui-user" for="login-name" required></label>
             </div>
 
-                <input type="password" class="login-field" value="" placeholder="password" id="login-pass" required>
-                <label class="login-field-icon fui-lock" for="login-pass" required></label>
-            </div>
+            <input type="password" class="login-field" value="" placeholder="password" id="login-pass" name="password" required>
+            <label class="login-field-icon fui-lock" for="login-pass" required></label>
+            <p><input class="btn btn-primary btn-large btn-block " href="#"  type="submit" value="Login"/></p>
+        </form>
 
-            <a class="btn btn-primary btn-large btn-block" href="#">login</a>
-            <a class="login-link" href="#" style="text-align: center">Lost your password?</a>
-            <a class="login-link" href="index.html" style="text-align: center">Back to Home Page</a>
-        </div>
+        <a class="login-link" href="#" style="text-align: center">Lost your password?</a>
+        <a class="login-link" href="index.html" style="text-align: center">Back to Home Page</a>
     </div>
 </div>
+
 </body>
 </html>
